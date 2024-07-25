@@ -1,10 +1,21 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import { navItems } from './navItems'
+import './Navigation.less'
 
 const Navigation = () => {
+	document.querySelector('.navigation__close')?.addEventListener('click', () => {
+		document.querySelector('.navigation')?.classList.add('hidden')
+	})
+
+	document.querySelectorAll('.navigation__list__item')?.forEach(item => {
+		item.addEventListener('click', () => {
+			document.querySelector('.navigation')?.classList.add('hidden')
+		})
+	})
+
 	return (
-		<nav className='navigation'>
+		<nav className='navigation hidden'>
 			<div className='navigation__close'>
 				<FontAwesomeIcon icon={faXmark} />
 			</div>

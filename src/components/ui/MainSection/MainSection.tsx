@@ -1,4 +1,5 @@
 import image from '../../../assets/images/main-section-image.png'
+import './MainSection.less'
 
 const MainSection = () => {
 	return (

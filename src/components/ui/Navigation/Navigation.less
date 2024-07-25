@@ -1,0 +1,46 @@
+.navigation {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--color-menu);
+
+	&__header {
+		font-size: 2rem;
+		font-family: 'Allura';
+		margin: 2rem 0;
+		text-align: center;
+	}
+
+	&__close {
+		position: absolute;
+		left: 2rem;
+		top: 2rem;
+
+		svg {
+			font-size: 2rem;
+		}
+	}
+
+	&__list {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 100%;
+		padding: 3rem 0;
+
+		&__item {
+			margin: 1rem 0;
+
+			a {
+				font-size: 2rem;
+				font-family: 'Cinzel';
+				text-decoration: none;
+				color: #000;
+				cursor: pointer;
+			}
+		}
+	}
+}
